@@ -1,0 +1,149 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bodoni MT Black", serif;
+    background-color: #002244; /* Navy Blue */
+    color: #C5C6C7; /* Silver */
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #C5C6C7; /* Silver */
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #00529B; /* Cowboys Blue */
+    color: #C5C6C7; /* Silver */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366; /* Darker Cowboys Blue */
+}
+
+}
+
+#question-container {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#options-container {
+    margin-top: 20px;
+}
+
+button.option {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.option:hover {
+    background-color: #0056b3;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.result-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#final-score {
+    font-size: 24px;
+    color: #333;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#save-score {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#save-score:hover {
+    background-color: #0056b3;
+}
+
+.high-scores-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.high-scores-container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#high-scores-list {
+    list-style: none;
+    padding: 0;
+}
+
+#high-scores-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#clear-scores {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #ff4136;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#clear-scores:hover {
+    background-color: #d80000;
+}
