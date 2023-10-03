@@ -1,2 +1,0 @@
-# QUIZ
-Timed Coding Quiz
