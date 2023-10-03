@@ -1,0 +1,186 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #000; /* Black */
+    color: #00ff00; /* Neon Green */
+}
+
+/* Matrix-style background */
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-color: black; /* Background color for the Matrix effect */
+}
+
+.matrix-text {
+    position: absolute;
+    opacity: 0;
+    font-size: 16px;
+    font-weight: bold;
+    animation: matrix-fall 2s linear infinite, matrix-flicker 0.1s alternate infinite;
+}
+
+@keyframes matrix-fall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(calc(100vh + 100px));
+    }
+}
+
+@keyframes matrix-flicker {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000; /* Black */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00ff00; /* Neon Green */
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #00ff00; /* Neon Green */
+    color: #000; /* Black */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007f00; /* Darker Neon Green */
+}
+
+#question-container {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #00ff00; /* Neon Green */
+}
+
+#options-container {
+    margin-top: 20px;
+}
+
+button.option {
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007f00; /* Darker Neon Green */
+    color: #000; /* Black */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.option:hover {
+    background-color: #00ff00; /* Neon Green */
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #00ff00; /* Neon Green */
+}
+
+.result-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#final-score {
+    font-size: 24px;
+    color: #00ff00; /* Neon Green */
+}
+
+label {
+    font-size: 16px;
+    color: #00ff00; /* Neon Green */
+}
+
+input[type="text"] {
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #00ff00; /* Neon Green */
+    border-radius: 5px;
+}
+
+#save-score {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #00ff00; /* Neon Green */
+    color: #000; /* Black */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#save-score:hover {
+    background-color: #007f00; /* Darker Neon Green */
+}
+
+.high-scores-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.high-scores-container h2 {
+    font-size: 24px;
+    color: #00ff00; /* Neon Green */
+}
+
+#high-scores-list {
+    list-style: none;
+    padding: 0;
+}
+
+#high-scores-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #00ff00; /* Neon Green */
+}
+
+#clear-scores {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #ff4136; /* Red */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#clear-scores:hover {
+    background-color: #d80000; /* Darker Red */
+}
